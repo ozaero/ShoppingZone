@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ShoppingZone.Data.Entity.Category>
+@{
+    var categoryId = Url.RequestContext.RouteData.Values["id"];
+}
+<head>
+    <link href="~/src/still/Category List.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="list-group">
+        @if (categoryId == null)
+        {
+            <a href="/Home/ProductMenu/" class="list-group-item list-group-item-action list-group-item-light active">All</a>
+        }
+        else
+        {
+            <a href="/Home/ProductMenu/" class="list-group-item list-group-item-action list-group-item-light">All</a>
+        }
+        @foreach (var item in Model)
+        {
+            if (categoryId != null)
+            {
+                if (item.Id == int.Parse(categoryId.ToString()))
+                {
+                    <a href="/Home/ProductMenu/@item.Id" class="list-group-item list-group-item-action list-group-item-light active">@item.Name</a>
+                }
+                else
+                {
+                    <a href="/Home/ProductMenu/@item.Id" class="list-group-item list-group-item-action list-group-item-light">@item.Name</a>
+
+                }
+            }
+            else
+            {
+                <a href="/Home/ProductMenu/@item.Id" class="list-group-item list-group-item-action list-group-item-light">@item.Name</a>
+
+            }
+        }
+    </div>
+</body>

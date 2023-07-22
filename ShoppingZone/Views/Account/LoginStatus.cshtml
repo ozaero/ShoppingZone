@@ -1,0 +1,19 @@
+﻿@model bool
+
+<body>
+    @if (Model)
+    {
+        <div class="loginArea" style="display: flex; align-items:center">
+            @Html.Action("LoginPhoto", "Account")
+            <div class="actionArea">
+                @Html.Action("CartSummary", "Cart")
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="loginArea">
+            <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;" ></i>
+        </div>
+    }
+</body>

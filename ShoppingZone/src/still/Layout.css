@@ -1,0 +1,22 @@
+﻿.accountLogo {
+    color: ghostwhite;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+body {
+    margin-bottom: 70px;
+    min-height: 100vh;
+}
+
+footer i {
+    font-size:20px;
+}
+
+footer .container {
+    display:flex;
+}
+
+.footerSpace {
+    height: 100%;
+}

@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<title>Register</title>
+<head>
+    <link href="~/src/still/Register.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container" style="margin-top:30px">
+        <form action="/Account/Register" method="post" enctype="multipart/form-data">
+
+            <div class="image-container" id="imagePreviewContainer" style="display: none;">
+                <img id="imagePreview" alt="Uploaded Image">
+            </div>
+
+            <div class="form-group">
+                <label>Username</label>
+                <input class="form-control" name="UserName" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" name="Password" id="exampleInputPassword1" placeholder="Password">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputImage">Profile Photo</label>
+                <input type="file" class="form-control-file" id="exampleInputImage" name="ImageFile" onchange="showImagePreview(event)">
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Join</button>
+        </form>
+    </div>
+
+    <script>
+        function showImagePreview(event) {
+            const fileInput = event.target;
+            const file = fileInput.files[0];
+            const imagePreview = document.getElementById('imagePreview');
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function () {
+                    imagePreview.src = reader.result;
+                    document.getElementById('imagePreviewContainer').style.display = 'block';
+                }
+                reader.readAsDataURL(file);
+            } else {
+                imagePreview.src = '';
+                document.getElementById('imagePreviewContainer').style.display = 'none';
+            }
+        }
+    </script>
+</body>

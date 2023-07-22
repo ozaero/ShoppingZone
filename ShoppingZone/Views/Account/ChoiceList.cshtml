@@ -1,0 +1,12 @@
+﻿
+<head>
+    <link href="~/src/still/Category List.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="list-group">
+        @Html.Action("AdminChoice", "Account")
+        <a href="/Cart/CartPage" class="list-group-item list-group-item-action list-group-item-light">Your Cart</a>
+        <a href="/Profile/Order" class="list-group-item list-group-item-action list-group-item-light">Order History</a>
+        <a href="/Account/Logout" class="list-group-item list-group-item-action list-group-item-light">Logout</a>
+    </div>
+</body>

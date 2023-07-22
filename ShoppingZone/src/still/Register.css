@@ -1,0 +1,10 @@
+﻿.validation-summary-errors {
+    color: red;
+}
+
+.image-container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}

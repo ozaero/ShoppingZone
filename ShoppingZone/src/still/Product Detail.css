@@ -1,0 +1,33 @@
+﻿
+
+.itemArea {
+    margin-top: 30px;
+}
+
+.itemArea img{
+    border-radius: 5px;
+    width: 550px;
+    height: 550px;
+}
+
+.itemArea button {
+    margin-top: 25px;
+}
+
+    .itemArea h2 {
+        color: green;
+        margin-top: 12px
+    }
+
+
+.stockArea {
+    display: flex;
+}
+
+.stockArea span{
+    margin-right: 10px;
+}
+
+.navArea {
+    margin-top:15px;
+}

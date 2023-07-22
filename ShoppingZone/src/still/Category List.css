@@ -1,0 +1,7 @@
+﻿.list-group a::selection {
+    background-color: black;
+}
+
+.list-group a:active {
+    background-color: blue;
+}

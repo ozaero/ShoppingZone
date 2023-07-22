@@ -1,0 +1,8 @@
+﻿.loginAarea {
+    display: flex;
+    align-items: center;
+}
+
+.loginAarea i{
+    margin-right: 5px;
+}

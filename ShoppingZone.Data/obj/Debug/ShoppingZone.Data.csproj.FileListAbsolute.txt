@@ -1,0 +1,12 @@
+C:\Users\ozane\source\repos\ShoppingZone.Data\bin\Debug\ShoppingZone.Data.dll.config
+C:\Users\ozane\source\repos\ShoppingZone.Data\bin\Debug\ShoppingZone.Data.dll
+C:\Users\ozane\source\repos\ShoppingZone.Data\bin\Debug\ShoppingZone.Data.pdb
+C:\Users\ozane\source\repos\ShoppingZone.Data\bin\Debug\EntityFramework.dll
+C:\Users\ozane\source\repos\ShoppingZone.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ozane\source\repos\ShoppingZone.Data\bin\Debug\EntityFramework.xml
+C:\Users\ozane\source\repos\ShoppingZone.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ozane\source\repos\ShoppingZone.Data\obj\Debug\ShoppingZone.Data.csproj.AssemblyReference.cache
+C:\Users\ozane\source\repos\ShoppingZone.Data\obj\Debug\ShoppingZone.Data.csproj.CoreCompileInputs.cache
+C:\Users\ozane\source\repos\ShoppingZone.Data\obj\Debug\ShoppingZone.Data.csproj.CopyComplete
+C:\Users\ozane\source\repos\ShoppingZone.Data\obj\Debug\ShoppingZone.Data.dll
+C:\Users\ozane\source\repos\ShoppingZone.Data\obj\Debug\ShoppingZone.Data.pdb

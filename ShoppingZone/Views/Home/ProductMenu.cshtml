@@ -1,0 +1,26 @@
+﻿@using ShoppingZone.Data.Entity;
+@model IEnumerable<ProductView>
+@{
+    ViewBag.Title = "ProductMenu";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<title>Shop</title>
+<head>
+    <link href="~/src/still/Product Menu.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="itemArea">
+            <div class="row">
+                <div class="col-md-3">
+                    @Html.Action("CategoryList", "Home")
+                </div>
+                <div class="col-md-9">
+                    <div class="cardArea">
+                        @Html.Partial("ProductList", Model)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,33 @@
+﻿@using ShoppingZone.Data.Entity
+@model IEnumerable<ProductView>
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<title>Home</title>
+<head>
+    <link href="~/src/still/Home.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="p-4 shadow-4 rounded-3">
+                <h2 style="color:whitesmoke;">Welcome to ShoppingZone!</h2>
+                <p style="color:whitesmoke;">
+                    This is a simple hero unit, a simple jumbotron-style component for calling extra
+                    attention to featured content or information.
+                </p>
+                <hr class="my-4" style="color:whitesmoke;" />
+                <p style="color:whitesmoke;">
+                    It uses utility classes for typography and spacing to space content out within the
+                    larger container.
+                </p>
+                <button type="button" class="btn btn-primary">
+                    <a href="/Home/ProductMenu/"  style="color:whitesmoke; text-decoration: none">Go To Shop</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    @Html.Partial("ProductList", Model)
+</body>
+

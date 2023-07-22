@@ -1,0 +1,6 @@
+﻿@model ShoppingZone.Data.Entity.User
+
+@if (Model.Role == "Admin")
+{
+    <a href="/Admin/Index" class="list-group-item list-group-item-action list-group-item-light">Admin Panel</a>
+}
